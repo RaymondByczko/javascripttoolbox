@@ -180,3 +180,24 @@ function FloatClass()
 	this.setupProcessKeyMovement = setupProcessKeyMovement;	
 	this.floatIt = floatIt;
 }
+
+/**
+  * @purpose To adjust the view port (the available screen)
+  * to the row, column square indicated.  The row, column values
+  * are 0 based.
+  */
+function gotoSquare(theEid, row, column, num_rows, num_cols)
+{
+	var theE = document.getElementById(theEid);
+	var wTheE = theE.style.width;
+	var hTheE = theE.style.height;
+
+	var wnTheE = convertNumberAttribute(wTheE);
+	var hnTheE = convertNumberAttribute(hTheE);
+
+	var wColSpace = wnTheE/num_cols;
+	var hRowSpace = hnTheE/num_rows;
+	debugger;
+	window.alert('wColSpace='+wColSpace);
+	window.alert('hRowSpace='+hRowSpace);
+}
