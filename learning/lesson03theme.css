@@ -1,0 +1,6 @@
+DIV.ten {
+transform: rotate(10deg);
+-webkit-transform: rotate(10deg);
+text-align:center;
+vertical-align:center;
+}
